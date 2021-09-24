@@ -24,7 +24,7 @@ deliverables: '1 HTML file, 1 CSS file, images'
 - *Max lengths:* `30em`
 - *Gaps:* `1rem`
 - *Margins:* `1.5rem`
-- *Paddings:* `.5em 1em .6em`, 1rem`, `.5rem`
+- *Paddings:* `.5em 1em .6em`, `1rem`, `.5rem`
 - *Border thicknesses:* `.2rem`
 - *Corner radii:* `.3rem`
 
