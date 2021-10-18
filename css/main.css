@@ -4,7 +4,7 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 *,
@@ -29,6 +29,7 @@ img {
 
 header {
   text-align: center;
+  padding: 0;
 }
 
 header h1 {
@@ -38,13 +39,13 @@ header h1 {
 
 header h2 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 nav ul a {
   text-decoration: underline;
   color: #3783a3;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 nav ul {
@@ -52,19 +53,32 @@ nav ul {
   display: flex;
   justify-content: space-around;
   margin: 1.5rem;
+  margin-bottom: 1rem;
   margin-top: 0;
 }
 
 main p:first-child {
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 2rem;
   text-align: center;
+  border-top: solid;
+  border-color: #e2e2e2;
 }
 
 main p:last-child {
-  font-size: 1.125rem;
+  font-size: 1rem;
   text-align: center;
-  margin: 1.5rem;
-  margin-bottom: 4rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: solid;
+  border-color: #e2e2e2;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 h2 {
@@ -90,12 +104,21 @@ article nav {
 article nav a {
   color: #3783a3;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+
+article h3 {
+  font-size: 1rem;
 }
 
 article p {
   margin-bottom: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+
+.symbolism {
+  border-bottom: solid;
+  border-color: #e2e2e2;
 }
 
 footer {
@@ -105,6 +128,10 @@ footer {
 }
 
 @media only screen and (min-width: 38em) {
+
+  html {
+    margin-top: 1rem;
+  }
 
   body {
     display: grid;
@@ -123,19 +150,31 @@ footer {
 
   header h2 {
     display: flex;
+    margin-bottom: 1rem;
   }
 
-  header ul a {
+  header nav ul {
     display: flex;
+    justify-content: flex-end;
+    position: absolute;
+  }
+
+  header nav li {
+    margin: 0 .5em;
   }
 
   main {
     grid-column: span 3;
     margin-left: 2rem;
     margin-right: 2rem;
-    border-top: solid;
-    border-bottom: solid;
-    border-color: #e2e2e2;
+  }
+
+  main p:first-child {
+    margin-top: .5rem;
+  }
+
+  main p:last-child {
+    margin-bottom: .5rem;
   }
 
   article nav {
@@ -150,6 +189,30 @@ footer {
     padding: 1rem;
     border-top: solid;
     border-color: #e2e2e2;
+    margin: 0;
+  }
+
+  .symbolism {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 62.5em) {
+
+  main p:first-child {
+    max-width: 50%;
+    text-align: center;
+  }
+
+  main p:last-child {
+    max-width: 50%;
+    text-align: center;
+  }
+
+  main {
+    grid-row: 2;
   }
 
 }
